@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duino Coin Wallet</title>
+
+    <style>
+        body {
+            background-color: #171718;
+            color: #fffdee;
+            overflow: hidden;
+        }
+
+        a {
+            color: #fffdee;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        .main {
+            padding: 10px;
+        }
+
+        .navbar {
+	        display: flex;
+	        justify-content: space-between;
+	        align-items: center;
+        }
+
+        .content {
+            display: grid;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .img > img {
+            width: 45px;
+            transform: translateY(3.5px);
+        }
+        
+        .img {
+            border: 3px solid #1f1f1f;
+            background-color: #242424;
+            border-radius: 7.5px;
+            display: grid;
+            align-items: center;
+        }
+
+        .img:hover {
+            border: 3px solid #ffc956;
+            cursor: pointer;
+        }
+
+        .text {
+            transform: translateY(-5px);
+        }
+
+        .share_buttons {
+            display: inline;
+        }
+
+        .share_btn {
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            padding: 8px 15px;
+            color: #0f0f0f;
+        }
+
+        #twitter {
+            background-color: #1DA1F2;
+        }
+
+        #twitter:hover {
+            background-color: #2086c5;
+        }
+
+        #reddit {
+            background-color: #FF5700;
+        }
+
+        #reddit:hover {
+            background-color: #a74819;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="text">
+                <a style="padding: 5px;" href="/wallet.html">&#10094;</a><h2>Receive coins</h2>
+            </div>
+            <div class="img">
+                <img id="avatar" alt="">
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>
+                To Receive Duino Coins<br>Share Your Username:<br><br><p style="display: inline" id="username"> </p>
+            </h1><br>
+            <div class="share_buttons">
+                <a class="share_btn" id="twitter" href="https://twitter.com/share?url=https://duinocoin.com&amp;text=Check%20out%20Duino%20Coin!&amp;hashtags=duinocoin" target="_blank"><b>Share On Twitter</b></a>
+                <a class="share_btn" id="reddit" href="http://reddit.com/submit?url=https://duinocoin.com&amp;title=Check%20out%20Duino%20Coin!" target="_blank"><b>Share On Reddit</b></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="send.js" charset="utf-8"></script>
+</body>
+</html>

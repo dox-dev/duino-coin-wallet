@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Duino Coin Wallet</title>
+
+    <style>
+        body {
+            background-color: #121212;
+            color: #fffdee;
+        }
+
+        a {
+            color: #d1a23c;
+        }
+
+        input {
+            background-color: #242424;
+            width: 335px;
+            height: 30px;
+            border-radius: 5px;
+            border: 2.5px solid #242424;
+            display: inline-flex;
+            margin-bottom: 7.5px;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            outline: none;
+            color: #fffdee;
+        }
+
+        input:focus {
+            border: 2.5px solid #ffb412;
+        }
+
+        label {
+            float: left;
+            margin-bottom: 2.5px;
+        }
+
+        img {
+            width: 55px;
+            transform: translateY(-5.5px);
+        }
+
+        #login_btn {
+            background-color: #ffb412;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            padding: 8px 150px;
+            color: #0f0f0f;
+        }
+
+        #login_btn:hover {
+            background-color: #ffc956;
+        }
+
+        #error {
+            color: #ff4112;
+        }
+
+        .login {
+            padding: 10px;
+            padding-top: 25px;
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <center>
+            <img src="https://github.com/revoxhere/duino-coin/blob/master/Resources/duco_200x200.png?raw=true">
+            <h1 style="float: left; font-size: 15px;">Welcome Back to Duino Coin Wallet!</h1>
+
+            <label>Username</label>
+            <input type="text" id="username">
+            <label>Password</label>
+            <input type="password" id="password">
+            <button id="login_btn"><b>Login</b></button>
+        <p id="error"> </p>
+        </center><br>
+        <div style="color: #8d8d8d">Need help? Contact Duino Coin team <a href="https://duinocoin.com/contact" target="_blank">here.</a></div>
+    </div>
+
+    <script src="popup.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duino Coin Wallet</title>
+
+    <style>
+        body {
+            background-color: #171718;
+            color: #fffdee;
+        }
+        
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #171718b4; 
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1f1f1f; 
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ffc956bd; 
+        }
+
+        a.button {
+            border: 2px solid #1f1f1f;
+            background-color: #242424;
+            border-radius: 7.5px;
+            text-decoration: none;
+            padding: 2.5px;
+            padding-bottom: 5px;
+            color: #fffdee;
+        }
+
+        a.button:hover {
+            border: 2px solid #ffc956;
+        }
+
+        .main {
+            padding: 10px;
+        }
+
+        .navbar {
+	        display: flex;
+	        justify-content: space-between;
+	        align-items: center;
+        }
+
+        .content {
+            display: grid;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .img > img {
+            width: 45px;
+            transform: translateY(3.5px);
+        }
+        
+        .img {
+            border: 3px solid #1f1f1f;
+            background-color: #242424;
+            border-radius: 7.5px;
+            display: grid;
+            align-items: center;
+        }
+
+        .img:hover {
+            border: 3px solid #ffc956;
+            cursor: pointer;
+        }
+
+        .hello {
+            transform: translateY(-5px);
+        }
+
+        .history {
+            border-top: 3.5px solid #1f1f1f;
+            border-radius: 7.5px;
+            flex: 1;
+            overflow: auto;
+            overflow-x: hidden !important;
+            display: grid;
+            align-items: center;
+        }
+
+        .history {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .history td, .history th {
+            border: 1px solid #1f1f1f;
+            border-radius: 2.5px;
+            padding: 6.5px;
+        }
+
+        .history th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #ffc956;
+            color: #0f0f0f;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="hello">
+                <h2>Welcome back, <p style="display: inline" id="username"> </p>!</h2>
+            </div>
+            <div class="img">
+                <img id="avatar" alt="">
+            </div>
+        </div>
+
+        <div class="content">
+            <h1>
+                <p style="display: inline" id="balance"> </p>&nbsp;DUCO
+            </h1>
+            <nav>
+                <a href="/send.html" class="button">Send</a>
+                <a href="/receive.html" class="button">Receive</a>
+                <a href="#" class="button" style="cursor: not-allowed;" >Exchange</a>
+            </nav>
+        </div>
+
+        <div class="history">
+            <table class="activity-table">
+                <tr  class="bg-info">
+                    <th>Amount</th>
+                    <th>Recipient</th>
+                    <th>Sender</th>
+                </tr>
+            
+                <tbody id="activity">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="content.js" charset="utf-8"></script>
+</body>
+</html>

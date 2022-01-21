@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duino Coin Wallet</title>
+
+    <style>
+        body {
+            background-color: #171718;
+            color: #fffdee;
+            overflow: hidden;
+        }
+
+        a {
+            color: #fffdee;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        .main {
+            padding: 10px;
+        }
+
+        .navbar {
+	        display: flex;
+	        justify-content: space-between;
+	        align-items: center;
+        }
+
+        .content {
+            display: grid;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 35px;
+            margin-top: 35px;
+        }
+
+        .content > h1 {
+            margin-bottom: 25px;
+        }
+
+        .img > img {
+            width: 45px;
+            transform: translateY(3.5px);
+        }
+        
+        .img {
+            border: 3px solid #1f1f1f;
+            background-color: #242424;
+            border-radius: 7.5px;
+            display: grid;
+            align-items: center;
+        }
+
+        .img:hover {
+            border: 3px solid #ffc956;
+            cursor: pointer;
+        }
+
+        .text {
+            transform: translateY(-5px);
+        }
+
+        .amount {
+            background-color: #242424;
+            color: #fffdee;
+            border: 2.5px solid #1f1f1f;
+            border-radius: 5px;
+            width: 75px;
+            margin-left: 5px;
+            padding: 5px;
+        }
+        
+        .amount::-webkit-outer-spin-button, .amount::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .amount[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        .grid > input {
+            margin-bottom: 12.5px;
+        }
+
+        .other {
+            background-color: #242424;
+            color: #fffdee;
+            border: 2.5px solid #1f1f1f;
+            border-radius: 5px;
+            width: 100px;
+            margin-left: 5px;
+            padding: 5px;
+        }
+
+        #send_btn {
+            background-color: #ffb412;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            padding: 8px 100px;
+            color: #0f0f0f;
+        }
+
+        #send_btn:hover {
+            background-color: #ffc956;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="text">
+                <a style="padding: 5px;" href="/wallet.html">&#10094;</a><h2>Transfer coins</h2>
+            </div>
+            <div class="img">
+                <img id="avatar" alt="">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="grid">
+                <input type="number" class="amount" id="amount" min="0.000001" placeholder="Amount"><br>
+                <input type="text" class="other" id="recipient" placeholder="Recipient">
+                <input type="text" class="other" id="memo" placeholder="Memo"><br>
+                <button id="send_btn"><b>Send</b></button>
+                <p id="prompt"> </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="send.js" charset="utf-8"></script>
+</body>
+</html>

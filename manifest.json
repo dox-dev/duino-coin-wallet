@@ -1,0 +1,16 @@
+{
+    "name": "Duino Coin Wallet",
+    "version": "1.0",
+    "description": "A Crypto Wallet for Duino Coin",
+    "icons": { "16": "icon.png",
+                "48": "icon.png",
+                "128": "icon.png" },
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Duino Coin Wallet"
+    },
+    "permissions": [
+        "https://server.duinocoin.com/*"
+    ]
+}

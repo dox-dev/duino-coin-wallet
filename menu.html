@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duino Coin Wallet</title>
+
+    <style>
+        body {
+            background-color: #171718;
+            color: #fffdee;
+            overflow: hidden;
+        }
+
+        a {
+            color: #fffdee;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+
+        .main {
+            padding: 10px;
+        }
+
+        .navbar {
+	        display: flex;
+	        justify-content: space-between;
+	        align-items: center;
+        }
+
+        .content {
+            display: grid;
+            align-items: center;
+            text-align: center;
+        }
+
+        .text {
+            transform: translateY(-5px);
+        }
+
+        #logout_btn {
+            background-color: #ffc956;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            padding: 8px 15px;
+            color: #0f0f0f;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="text">
+                <a style="padding: 5px;" href="/wallet.html">&#10094;</a><h2>Settings</h2>
+            </div>
+        </div>
+
+        <div class="content">
+            <button id="logout_btn"><b>Logout</b></button>
+        </div>
+    </div>
+
+    <script src="menu.js" charset="utf-8"></script>
+</body>
+</html>
