@@ -1,5 +1,6 @@
 {
     "name": "Duino Coin Wallet",
+    "author": "Dox",
     "version": "1.0",
     "description": "A Crypto Wallet for Duino Coin",
     "icons": { "16": "icon.png",
