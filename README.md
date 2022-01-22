@@ -12,7 +12,7 @@ d88' `888  d88' `88b  `88b..8P'          d88' `888  d88' `88b  `88.  .8'
   <img src="https://github.com/revoxhere/duino-coin/blob/master/Resources/ducobanner.png?raw=true" width="420px"/>
 </a>
 
-# Duino Coin Wallet Extension
+# Duino Coin Wallet Extension <img src="https://i.ibb.co/HCYMLJZ/image.png" width="35px"/>
 ### What is **Duino Coin**?
 **Duino Coin** was founded in 2019 and is a for-fun, fully original **crypto coin project** developed by a team of **young developers** that focuses on **energy efficient mining**. It's mostly, but not only, dedicated to people who are just starting out in the **crypto world** as it doesn't require any expensive equipment.
 
