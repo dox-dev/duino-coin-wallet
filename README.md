@@ -30,10 +30,9 @@ To use this extension you'll need to add it to your browser. You can do that by:
 - Unique avatars
 
 ### Tested on:
-<b>Opera &nbsp;&#10003;</b><br>
-<b>Google Chrome &nbsp;&#10003;</b><br>
-<b>Microsoft Edge &nbsp;&#10003;</b><br>
-Mozilla Firefox &nbsp;&#10006;
+<b>&#10003;&nbsp;Opera</b><br>
+<b>&#10003;&nbsp;Google Chrome</b><br>
+<b>&#10003;&nbsp;Microsoft Edge</b>
 
 ### Screenshots
 ##### Login Page:
