@@ -26,8 +26,14 @@ To use this extension you'll need to add it to your browser. You can do that by:
 - Downloading **source code** here and uploading it **directly** into your browser
 
 ### Features
-- ##### Clean UI
-- ##### Unique avatars
+- Clean UI
+- Unique avatars
+
+### Tested on:
+<b>Opera &nbsp;&#10003;</b><br>
+<b>Google Chrome &nbsp;&#10003;</b><br>
+<b>Microsoft Edge &nbsp;&#10003;</b><br>
+Mozilla Firefox &nbsp;&#10006;
 
 ### Screenshots
 ##### Login Page:
