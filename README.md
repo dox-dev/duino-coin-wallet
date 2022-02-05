@@ -22,7 +22,7 @@ This browser extension allows you to **send** and **receive** your **duino coins
 ### How can I use this extension?
 To use this extension you'll need to add it to your browser. You can do that by:
 - Installing it from **Opera Addons Store** (still waiting for approval)
-- Installing it from **Edge Addons Store** (still waiting for approval)
+- Installing it from **Edge Addons Store** <a href="https://microsoftedge.microsoft.com/addons/detail/duino-coin-wallet/iilcjagofiflhcfkidjkdikegoclnfdl">here</a>
 - Downloading **source code** here and uploading it **directly** into your browser
 
 ### Features
